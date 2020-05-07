@@ -1,4 +1,12 @@
 /* Add CSS styling here */
+
+/* COLORS 
+light green #48A241
+light pink #FEDCE8
+peach #FAA094
+yucca light turquoise 9ED9CC
+/*pretty teal #4db4aa*/
+
 /* Reset CSS */
 html, body, div, span, applet, object, iframe,  
 h1, h2, h3, h4, h5, h6, p, blockquote, pre,  
@@ -13,26 +21,173 @@ article, aside, canvas, details, embed,
 figure, figcaption, footer, header, hgroup,  
 menu, nav, output, ruby, section, summary,  
 time, mark, audio, video {  
-margin: 0;  
-padding: 0;  
-border: 0;  
-font-size: 100%;  
-font: inherit;  
-vertical-align: baseline;  
+  margin: 0;  
+  padding: 0;  
+  border: 0;  
+  font-size: 100%;  
+  font: inherit;  
+  vertical-align: baseline;  
 }
 
-/* General Styles */
+*{
+  box-sizing:border-box;
+/*   max-width:100%;
+  width: auto; */
+}
 body{
-
+  display: block;
+  margin: 0;
+/*   width: 1054px; */
+  border: 5px solid hotpink;
+}
+/* General Styles */
+header{
+  background-color: #fedce8;
+  padding: 3%;
+  margin: 0;
+  border-bottom: 5px dashed hotpink;
 }
 
-section{
 
-}
+
 
 h1{
+  font-size: 60px;
+  font-family: 'Poiret One';
+  color: hotpink;
+  text-transform: capitalize;
+}
 
+h1:hover{
+  text-transform: uppercase;
+  color:#FAA094;
+}
+
+nav a{
+  margin: 12px 0 0 0;
+  border: 2px solid #9ED9CC;
+  padding: 5px 10px;
+  display: inline-block;
+  background-color: white;
+  color: #4db4aa;
+  text-decoration: none;  
+  font-family: 'Arial', regular;
+  /*   display: flex-start; */
+  justify-content: flex-start;
+}
+
+nav a:hover{
+  background-color:#FAA094;
+  color: white;
+}
+
+.content-row{
+  display:flex;
+  margin: 5px;
+  align-items: center;
+}
+
+.content-row p{
+    background-color:#4db4aa;
+    color: white;
+    font-size: 20px;
+    font-family: "Open Sans", regular, sans-serif;
+    line-height: 1.5;
+  }
+
+.projects{
+  background-color:palegreen;
+  display:flex;
+  flex-direction:column;
+}
+section.gallery{
+  display: flex; 
+  flex-wrap: wrap;
+  justify-content: space-between;
+  flex-direction: row;
+  /* padding: 10% 0;
+  width: 200px;
+  height: 200px; */
+}
+
+.gallery div{
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  align-items: center;
+  margin-bottom: 5%;
+  
+}
+
+.gallery img{
+  object-fit: fit;
 }
 
 
-/* header section styles */
+.button-projects{  
+  text-align:center;
+  margin:5%;
+  border: 2px solid #9ED9CC;
+  padding: 5px 3px;
+  width: 15%;
+  display: inline-block;
+  background-color: white;
+  color: #4db4aa;
+  text-decoration: none;  
+  font-family: 'Arial', regular;
+  font-size: 16px;
+}
+
+.button-projects:hover{
+  background-color:#FAA094;
+  color: white;
+}
+
+h2{
+  color: #008080;
+  font-family: "Poiret One";
+  font-size: 30px;
+  background-color: white;
+  text-align:left;
+  margin:0 5% 0 5%;
+}
+
+.footer-content h2{
+  color: white;
+  background-color:#48A241
+}
+
+.footer-content a{
+  margin: 10px 0 0 0;
+  border: 2px solid #9ED9CC;
+  padding: 10px 20px;
+  text-align: center;
+  display: inline-block;
+  background-color: white;
+  color: #4db4aa;
+  text-decoration: none;  
+  font-family: 'Arial', regular;
+}
+
+footer{
+  border: 2px solid green;
+  margin: 0 auto;
+  padding: 3%;
+  background: url("https://s7d5.scene7.com/is/image/UrbanOutfitters/37998945_030_b?$xlarge$&fit=constrain&qlt=80&wid=683");
+  align-items: center;
+}
+
+.footer-content button{  
+ justify-content: center; 
+  text-align:center;
+  margin:5%;
+  border: 2px solid #9ED9CC;
+  padding: 5px 3px;
+  width: 15%;
+  display: inline-block;
+  background-color: white;
+  color: #4db4aa;
+  text-decoration: none;  
+  font-family: 'Arial', regular;
+  font-size: 16px;
+}
