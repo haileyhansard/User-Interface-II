@@ -31,13 +31,13 @@ time, mark, audio, video {
 
 *{
   box-sizing:border-box;
-/*   max-width:100%;
+  /*   max-width:100%;
   width: auto; */
 }
 body{
   display: block;
   margin: 0;
-/*   width: 1054px; */
+  /*   width: 1054px; */
   border: 5px solid hotpink;
 }
 /* General Styles */
@@ -48,8 +48,11 @@ header{
   border-bottom: 5px dashed hotpink;
 }
 
-
-
+.content-row img{
+  width: 500px;
+  max-width: 500px;
+  min-width: 500px;
+}
 
 h1{
   font-size: 60px;
@@ -61,6 +64,10 @@ h1{
 h1:hover{
   text-transform: uppercase;
   color:#FAA094;
+}
+
+nav{
+  flex-direction:row;
 }
 
 nav a{
@@ -83,22 +90,36 @@ nav a:hover{
 
 .content-row{
   display:flex;
-  margin: 5px;
+  margin: 0;
+  padding: 0 0 50px 0;
   align-items: center;
+  justify-content: flex-start;
 }
 
-.content-row p{
-    background-color:#4db4aa;
-    color: white;
-    font-size: 20px;
-    font-family: "Open Sans", regular, sans-serif;
-    line-height: 1.5;
-  }
+h2{
+  color: #008080;
+  font-family: "Poiret One";
+  font-size: 50px;
+/*   background-color: white; */
+  text-align:left;
+  margin:0 5% 0 5%;
+}
+
+.bio{
+  background-color:white;
+  color: #4db4aa;
+  font-size: 20px;
+  font-family: "Open Sans", regular, sans-serif;
+  line-height: 1.5;
+  width: 400px;
+  margin: 10px 25px 30px;
+}
 
 .projects{
-  background-color:palegreen;
+  background-color:white;
   display:flex;
   flex-direction:column;
+  padding: 60px 40px;
 }
 section.gallery{
   display: flex; 
@@ -112,24 +133,20 @@ section.gallery{
 
 .gallery div{
   display: flex;
+  flex-basis: 25%;
   flex-direction: column;
   flex-wrap: wrap;
   align-items: center;
   margin-bottom: 5%;
-  
+
 }
 
-.gallery img{
-  object-fit: fit;
-}
-
-
-.button-projects{  
+button{  
+  justify-content: center; 
   text-align:center;
   margin:5%;
   border: 2px solid #9ED9CC;
-  padding: 5px 3px;
-  width: 15%;
+  padding: 10px 30px;
   display: inline-block;
   background-color: white;
   color: #4db4aa;
@@ -138,56 +155,30 @@ section.gallery{
   font-size: 16px;
 }
 
-.button-projects:hover{
+button:hover{
   background-color:#FAA094;
   color: white;
 }
 
-h2{
-  color: #008080;
+h3{
+  color: white;
+  background-color:#4db4aa;
+  text-align: center;
+  margin: 5px 1px;
+  padding: 1%;10%;
+  width: 25%;
   font-family: "Poiret One";
   font-size: 30px;
-  background-color: white;
-  text-align:left;
-  margin:0 5% 0 5%;
 }
 
-.footer-content h2{
-  color: white;
-  background-color:#48A241
-}
-
-.footer-content a{
-  margin: 10px 0 0 0;
-  border: 2px solid #9ED9CC;
-  padding: 10px 20px;
-  text-align: center;
-  display: inline-block;
-  background-color: white;
-  color: #4db4aa;
-  text-decoration: none;  
-  font-family: 'Arial', regular;
-}
 
 footer{
+  display:flex;
+  justify-content: center;
+  flex-direction: column;
   border: 2px solid green;
-  margin: 0 auto;
-  padding: 3%;
+  margin: 0;
+  padding: 3% 2%;
   background: url("https://s7d5.scene7.com/is/image/UrbanOutfitters/37998945_030_b?$xlarge$&fit=constrain&qlt=80&wid=683");
   align-items: center;
-}
-
-.footer-content button{  
- justify-content: center; 
-  text-align:center;
-  margin:5%;
-  border: 2px solid #9ED9CC;
-  padding: 5px 3px;
-  width: 15%;
-  display: inline-block;
-  background-color: white;
-  color: #4db4aa;
-  text-decoration: none;  
-  font-family: 'Arial', regular;
-  font-size: 16px;
 }
