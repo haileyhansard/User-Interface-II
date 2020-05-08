@@ -1,1 +1,184 @@
 /* Add CSS styling here */
+
+/* COLORS 
+light green #48A241
+light pink #FEDCE8
+peach #FAA094
+yucca light turquoise 9ED9CC
+/*pretty teal #4db4aa*/
+
+/* Reset CSS */
+html, body, div, span, applet, object, iframe,  
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,  
+a, abbr, acronym, address, big, cite, code,  
+del, dfn, em, img, ins, kbd, q, s, samp,  
+small, strike, strong, sub, sup, tt, var,  
+b, u, i, center,  
+dl, dt, dd, ol, ul, li,  
+fieldset, form, label, legend,  
+table, caption, tbody, tfoot, thead, tr, th, td,  
+article, aside, canvas, details, embed,  
+figure, figcaption, footer, header, hgroup,  
+menu, nav, output, ruby, section, summary,  
+time, mark, audio, video {  
+  margin: 0;  
+  padding: 0;  
+  border: 0;  
+  font-size: 100%;  
+  font: inherit;  
+  vertical-align: baseline;  
+}
+
+*{
+  box-sizing:border-box;
+  /*   max-width:100%;
+  width: auto; */
+}
+body{
+  display: block;
+  margin: 0;
+  /*   width: 1054px; */
+  border: 5px solid hotpink;
+}
+/* General Styles */
+header{
+  background-color: #fedce8;
+  padding: 3%;
+  margin: 0;
+  border-bottom: 5px dashed hotpink;
+}
+
+.content-row img{
+  width: 500px;
+  max-width: 500px;
+  min-width: 500px;
+}
+
+h1{
+  font-size: 60px;
+  font-family: 'Poiret One';
+  color: hotpink;
+  text-transform: capitalize;
+}
+
+h1:hover{
+  text-transform: uppercase;
+  color:#FAA094;
+}
+
+nav{
+  flex-direction:row;
+}
+
+nav a{
+  margin: 12px 0 0 0;
+  border: 2px solid #9ED9CC;
+  padding: 5px 10px;
+  display: inline-block;
+  background-color: white;
+  color: #4db4aa;
+  text-decoration: none;  
+  font-family: 'Arial', regular;
+  /*   display: flex-start; */
+  justify-content: flex-start;
+}
+
+nav a:hover{
+  background-color:#FAA094;
+  color: white;
+}
+
+.content-row{
+  display:flex;
+  margin: 0;
+  padding: 0 0 50px 0;
+  align-items: center;
+  justify-content: flex-start;
+}
+
+h2{
+  color: #008080;
+  font-family: "Poiret One";
+  font-size: 50px;
+/*   background-color: white; */
+  text-align:left;
+  margin:0 5% 0 5%;
+}
+
+.bio{
+  background-color:white;
+  color: #4db4aa;
+  font-size: 20px;
+  font-family: "Open Sans", regular, sans-serif;
+  line-height: 1.5;
+  width: 400px;
+  margin: 10px 25px 30px;
+}
+
+.projects{
+  background-color:white;
+  display:flex;
+  flex-direction:column;
+  padding: 60px 40px;
+}
+section.gallery{
+  display: flex; 
+  flex-wrap: wrap;
+  justify-content: space-between;
+  flex-direction: row;
+  /* padding: 10% 0;
+  width: 200px;
+  height: 200px; */
+}
+
+.gallery div{
+  display: flex;
+  flex-basis: 25%;
+  flex-direction: column;
+  flex-wrap: wrap;
+  align-items: center;
+  margin-bottom: 5%;
+
+}
+
+button{  
+  justify-content: center; 
+  text-align:center;
+  margin:5%;
+  border: 2px solid #9ED9CC;
+  padding: 10px 40px;
+  display: inline-block;
+  background-color: white;
+  color: #4db4aa;
+  text-decoration: none;  
+  font-family: 'Arial', regular;
+  font-size: 16px;
+}
+
+button:hover{
+  background-color:#FAA094;
+  color: white;
+}
+
+h3{
+  color: white;
+  background-color:#4db4aa;
+  text-align: center;
+  margin: 5px 1px;
+  padding: 1%;10%;
+  width: 25%;
+  font-family: "Poiret One";
+  font-size: 30px;
+}
+
+
+footer{
+  display:flex;
+  justify-content: center;
+  flex-direction: column;
+  border: 2px solid green;
+  margin: 0;
+  padding: 3% 2%;
+  background: url("https://s7d5.scene7.com/is/image/UrbanOutfitters/37998945_030_b?$xlarge$&fit=constrain&qlt=80&wid=683");
+  align-items: center;
+}
